@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+
+nav {
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(
+    94deg,
+    var(--bezh-1),
+    var(--bezh-2),
+    var(--bezh-1)
+  );
+  position: sticky;
+  top: 0;
+  font-size: 2.2rem;
+}
+nav .logo {
+  font-size: 3rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: var(--red);
+  line-height: 1.1;
+  padding: 5px;
+  box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.2);
+  background: linear-gradient(
+    156deg,
+    var(--bezh-1),
+    var(--bezh-2),
+    var(--bezh-1)
+  );
+}
+nav .logo:hover {
+  font-size: 3rem;
+  margin: 1rem;
+  text-decoration: none;
+  color: var(--red);
+  line-height: 1.1;
+  box-shadow: 4px 4px 8px rgba(0.4, 0.3, 0.3, 0.4);
+  background: linear-gradient(
+    156deg,
+    var(--bezh-1),
+    var(--bezh-2),
+    var(--bezh-1)
+  );
+}
+nav ul {
+  display: flex;
+  gap: 20px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: block;
+  text-decoration: none;
+  color: rgb(63, 96, 13);
+  margin: 0 1rem;
+  padding: 0.5rem 0.8rem;
+  border-radius: 10px;
+}
+nav ul li a:hover {
+  background-color: linear-gradient(
+    132deg,
+    var(--bezh-2),
+    var(--bezh-1),
+    var(--bezh-2)
+  );
+  box-shadow: 0 4px 8px rgba(0.1, 0.1, 0.1, 0.3);
+}
+nav .menu {
+  display: none;
+  position: absolute;
+  top: 0.75rem;
+  right: 0.5rem;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 2.25rem;
+  height: 2rem;
+}
+nav .menu span {
+  height: 0.4rem;
+  width: 100%;
+  background-color: var(--brown);
+  border-radius: 10px;
+}
+@media (max-width: 687px) {
+  nav .menu {
+    display: flex;
+  }
+  nav {
+    flex-direction: column;
+    align-items: start;
+  }
+  nav ul {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 0.25rem;
+  }
+  nav ul.zeigen {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+  }
+  nav ul li a {
+    margin: 0.2rem 0.5rem;
+  }
+}

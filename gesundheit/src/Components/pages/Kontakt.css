@@ -1,0 +1,112 @@
+.kontakt-form {
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0.2, 0.1, 0.1, 0.3);
+  background: linear-gradient(
+    156deg,
+    var(--bezh-1),
+    var(--bezh-2),
+    var(--bezh-1)
+  );
+  width: 40%;
+  margin: 60px auto;
+  text-align: center;
+}
+.kontakt-form h1 {
+  margin: 10px 0 60px;
+  color: var(--red);
+  font-size: 3rem;
+  line-height: 1.2;
+  letter-spacing: 1.7px;
+}
+label {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  letter-spacing: 1.2px;
+  gap: 10px;
+  color: rgb(63, 96, 13);
+  width: 85%;
+}
+/* small {
+  font-size: 0.9rem;
+  color: var(--brown);
+} */
+.input-kontakt {
+  font-family: "Permanent Marker", cursive;
+  width: 90%;
+  padding: 8px 15px;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--bezh-1);
+  background: var(--bezh-1);
+  color: var(--brown);
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0.3, 0.2, 0.2, 0.4);
+}
+.button-kontakt {
+  font-family: "Permanent Marker", cursive;
+  width: 30%;
+  padding: 8px 15px;
+  margin-top: 60px;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--green-1);
+  color: var(--white);
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0.3, 0.2, 0.2, 0.4);
+}
+.button-kontakt:hover {
+  font-family: "Permanent Marker", cursive;
+  width: 30%;
+  padding: 8px 15px;
+  margin-top: 60px;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  border-radius: 10px;
+  border: none;
+  background-color: var(--green-2);
+  color: var(--white);
+  outline: none;
+  box-shadow: 0 4px 8px rgba(0.3, 0.2, 0.2, 0.4);
+}
+.text {
+  background-color: var(--bezh-1);
+  padding: 8px 15px;
+  font-size: 1.5rem;
+  width: 90%;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0.3, 0.2, 0.2, 0.4);
+  font-family: "Permanent Marker", cursive;
+}
+@media (max-width: 687px) {
+  .kontakt-form {
+    width: 90%;
+  }
+  .kontakt-form h1 {
+    font-size: 2.5rem;
+  }
+  label,
+  .button-kontakt,
+  .button-kontakt:hover {
+    font-size: 1.4rem;
+  }
+  .input-kontakt,
+  .text {
+    font-size: 1.3rem;
+  }
+}

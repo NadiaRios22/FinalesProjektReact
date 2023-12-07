@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+.Footer {
+  font-family: "Permanent Marker", cursive;
+  background: linear-gradient(
+    94deg,
+    var(--bezh-1),
+    var(--bezh-2),
+    var(--bezh-1)
+  );
+  border-top: 2px solid var(--bezh-2);
+  margin-top: 180px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.footer-section {
+  margin: 25px;
+}
+.footer-section h3 {
+  color: var(--red);
+  letter-spacing: 1.3px;
+  margin-bottom: 5px;
+}
+.Kontakt p {
+  letter-spacing: 0.5px;
+}
+.Links {
+  display: flex;
+  flex-direction: row;
+  gap: 200px;
+}
+.Links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.Links a {
+  color: rgb(63, 96, 13);
+  text-decoration: none;
+  display: block;
+  letter-spacing: 0.5px;
+}
+.Links a:hover {
+  color: rgb(63, 96, 13);
+  text-decoration: underline;
+  display: block;
+  letter-spacing: 0.5px;
+}
+.Social-Media {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.Social-Media img {
+  border-radius: 50%;
+  width: 30px;
+}
+.Social-Media .Img {
+  display: flex;
+  flex-direction: row;
+  gap: 45px;
+}
+
+.copyright {
+  margin-top: 5px;
+}
+@media (max-width: 687px) {
+  .footer-content {
+    flex-direction: column;
+  }
+  .Kontakt {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .Links {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}

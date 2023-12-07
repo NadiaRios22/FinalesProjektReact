@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap");
+.homeContainer {
+  margin-top: 40px;
+  padding: 40px 10px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0.2, 0.1, 0.1, 0.3);
+  background: linear-gradient(
+    156deg,
+    var(--bezh-1),
+    var(--bezh-2),
+    var(--bezh-1)
+  );
+  width: 90%;
+  margin: 60px auto;
+  text-align: center;
+}
+.homeTitel {
+  font-family: "Permanent Marker", cursive;
+  display: flex;
+  flex-direction: column;
+  padding: 15px 10px;
+}
+.homeTitel h1 {
+  margin: 35px 0 60px;
+  color: var(--red);
+  font-size: 3.5rem;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+}
+.homeTitel h2 {
+  color: rgb(63, 96, 13);
+  margin-bottom: 20px;
+  font-size: 2rem;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+}
+.homeTitel p {
+  color: var(--brown);
+  font-size: 1.5rem;
+  line-height: 1.2;
+  letter-spacing: 1.5px;
+  text-align: left;
+  padding: 0 70px;
+  line-height: 1.4;
+  margin-bottom: 30px;
+}
+.homeTitel p .link {
+  color: var(--red);
+  text-decoration: none;
+}
+.bildContainer img {
+  height: 730px;
+  width: 90%;
+  border-radius: 10px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0.2, 0.1, 0.1, 0.3);
+}
+.bildContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.Button {
+  background-color: transparent;
+  border: none;
+  padding: 7px 20px;
+  border-radius: 10px;
+}
+.Button:hover {
+  background-color: transparent;
+  border: none;
+  background-color: linear-gradient(
+    156deg,
+    var(--bezh-1),
+    var(--bezh-2),
+    var(--bezh-1)
+  );
+  box-shadow: 2px 4px 8px rgba(0.2, 0.1, 0.2, 0.3);
+  padding: 7px 20px;
+  border-radius: 10px;
+}
+@media (max-width: 687px) {
+  .homeTitel p {
+    font-size: 1.5rem;
+    line-height: 1.2;
+    letter-spacing: 1.5px;
+    text-align: left;
+    padding: 0 35px;
+    line-height: 1.4;
+    margin-bottom: 30px;
+  }
+  .bildContainer img {
+    height: 400px;
+    width: 80%;
+    border-radius: 10px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0.2, 0.1, 0.1, 0.3);
+  }
+  .Button {
+    background-color: transparent;
+    border: none;
+    padding: 7px 7px;
+    border-radius: 10px;
+  }
+  .Button:hover {
+    background-color: transparent;
+    border: none;
+    background-color: linear-gradient(
+      156deg,
+      var(--bezh-1),
+      var(--bezh-2),
+      var(--bezh-1)
+    );
+    box-shadow: 2px 4px 8px rgba(0.2, 0.1, 0.2, 0.3);
+    padding: 7px 7px;
+    border-radius: 10px;
+  }
+  .bildContainer {
+    gap: 7px;
+  }
+}

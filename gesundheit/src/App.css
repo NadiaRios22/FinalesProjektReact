@@ -1,0 +1,31 @@
+:root {
+  --white: #ffffff;
+  --red: rgba(197, 24, 12, 0.969);
+  --trasp-white-1: rgba(255, 255, 255, 0.25);
+  --transp-white-2: rgba(255, 255, 255, 0.1);
+  --bezh-1: rgb(255, 241, 226);
+  --bezh-2: rgb(255, 214, 191);
+  --shadow: rgba(3, 87, 79, 0.2);
+  --green-1: rgb(111, 180, 8);
+  --green-2: rgb(82, 167, 82);
+  --brown: rgb(35, 17, 1);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(
+    90deg,
+    var(--bezh-1),
+    var(--bezh-2),
+    var(--bezh-1)
+  );
+}
+.App {
+  height: 100%;
+  width: 100%;
+}
