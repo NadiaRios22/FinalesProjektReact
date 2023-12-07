@@ -10,14 +10,13 @@ function Rezepte() {
   const APP_key = "17ab2678a8ccb114d96dec4e4b5c385e";
   const [rezept, setRezept] = useState("");
   const [results, setResults] = useState([]);
-  const [diät, setDiät] = useState("");
 
   function getRezept() {
     Axios.get(
-      `https://api.edamam.com/search?q=${rezept}&app_id=${APP_ID}&app_key=${APP_key}&healthLabels=${diät}&to=60`
+      `https://api.edamam.com/search?q=${rezept}&app_id=${APP_ID}&app_key=${APP_key}&to=60`
     ).then((res) => {
       setResults(res.data.hits);
-      console.log(res.data);
+      // console.log(res.data);
     });
   }
   useEffect(() => {
@@ -43,31 +42,6 @@ function Rezepte() {
           />
           <input className="input_form_search" type="submit" value="serch" />
         </div>
-        {/* <div>
-          <select
-            className="diät"
-            value={diät}
-            onChange={(e) => setDiät(e.target.value)}
-          >
-            <option value="default">deine Diät</option>
-            <option value="vegan">vegan</option>
-            <option value="Lupine-Free">Lupine-Free</option>
-            <option value="Sesame-Free">Sesame-Free</option>
-            <option value="Mustard-Free">Mustard-Free</option>
-            <option value="Celery-Free">Celery-Free</option>
-            <option value="Crustacean-Free">Crustacean-Free</option>
-            <option value="Red-Meat-Free">Red-Meat-Free</option>
-            <option value="Pork-Free">Pork-Free</option>
-            <option value="Alcohol-Free">Alcohol-Free</option>
-            <option value="Fish-Free">Fish-Free</option>
-            <option value="Egg-Free">Egg-Free</option>
-            <option value="Wheat-Free">Wheat-Free</option>
-            <option value="Gluten-Free">Gluten-Free</option>
-            <option value="Vegetarian">Vegetarian</option>
-            <option value="Keto-Friendly">Keto-Friendly</option>
-            <option value="Low Sugar">Low Sugar</option>
-          </select>
-        </div> */}
       </form>
       <div className="image-titel-rezept">
         <img src="/images/photo_2023-12-03_16-01-55.jpg" alt="" />
